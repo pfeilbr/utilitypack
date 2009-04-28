@@ -1,9 +1,9 @@
 PKG_NAME = "utilitypack"
-PKG_VERSION = '0.1.3'
+PKG_VERSION = '0.1.4'
 RDOC_OPTS = ['--quiet', '--title', "Utility Pack",
     "--opname", "index.html",
     "--line-numbers", 
-    "--main", "README",
+    "--main", "README.textile",
     "--inline-source"]
 
 Gem::Specification.new do |s|
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
     s.version = PKG_VERSION
     s.platform = Gem::Platform::RUBY
     s.has_rdoc = true
-    s.extra_rdoc_files = ["README", "CHANGELOG", "COPYING"]
+    s.extra_rdoc_files = ["README.textile", "CHANGELOG", "COPYING"]
     s.rdoc_options = RDOC_OPTS
     s.summary = "A library of common utilities for ruby"
     s.description = s.summary
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
     s.email = ''
     s.homepage = ''
     s.required_ruby_version = '>= 1.8.2'
-    s.files = %w(COPYING README Rakefile) +
+    s.files = %w(COPYING README.textile Rakefile) +
       Dir.glob("{bin,doc,test,lib,examples,extras,share,contrib}/**/*") + 
       Dir.glob("ext/**/*.{h,c,rb}") +
       Dir.glob("examples/**/*.rb") +
