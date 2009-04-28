@@ -1,9 +1,5 @@
-# get version info from source file
-$:.unshift(File.join(File.dirname(__FILE__), 'lib'))
-require 'utility_pack/version'
-
 PKG_NAME = "utilitypack"
-PKG_VERSION = UtilityPack::VERSION::STRING
+PKG_VERSION = '0.1.2'
 
 Gem::Specification.new do |s|
     s.name = PKG_NAME
