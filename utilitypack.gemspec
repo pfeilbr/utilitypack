@@ -1,3 +1,10 @@
+# get version info from source file
+$:.unshift(File.join(File.dirname(__FILE__), 'lib'))
+require 'utility_pack/version'
+
+PKG_NAME = "utilitypack"
+PKG_VERSION = UtilityPack::VERSION::STRING
+
 Gem::Specification.new do |s|
     s.name = PKG_NAME
     s.version = PKG_VERSION
@@ -5,7 +12,7 @@ Gem::Specification.new do |s|
     s.has_rdoc = true
     s.extra_rdoc_files = ["README", "CHANGELOG", "COPYING"]
     s.rdoc_options = RDOC_OPTS
-    s.summary = "Library of useful utilities"
+    s.summary = "A library of common utilities for ruby"
     s.description = s.summary
     s.author = "Brian Pfeil"
     s.email = ''
