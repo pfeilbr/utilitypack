@@ -1,5 +1,10 @@
 PKG_NAME = "utilitypack"
-PKG_VERSION = '0.1.2'
+PKG_VERSION = '0.1.3'
+RDOC_OPTS = ['--quiet', '--title', "Utility Pack",
+    "--opname", "index.html",
+    "--line-numbers", 
+    "--main", "README",
+    "--inline-source"]
 
 Gem::Specification.new do |s|
     s.name = PKG_NAME
